@@ -202,6 +202,9 @@ Notes on the Talos/Kubernetes side:
 | `igpu_engines_video_enhance_0_busy` | gauge | % | VideoEnhance engine busy |
 | `igpu_engines_video_enhance_0_sema` | gauge | % | VideoEnhance engine sema wait |
 | `igpu_engines_video_enhance_0_wait` | gauge | % | VideoEnhance engine wait |
+| `igpu_engines_compute_busy` | gauge | % | Compute engine busy |
+| `igpu_engines_compute_sema` | gauge | % | Compute engine sema wait |
+| `igpu_engines_compute_wait` | gauge | % | Compute engine wait |
 | `igpu_engines_busy_max` | gauge | % | Max busy across all engines |
 | `igpu_frequency_actual` | gauge | MHz | Current GPU frequency |
 | `igpu_frequency_requested` | gauge | MHz | Requested GPU frequency |
