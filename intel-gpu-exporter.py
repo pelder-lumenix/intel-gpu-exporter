@@ -68,6 +68,16 @@ igpu_engines_video_enhance_0_wait = Gauge(
     "igpu_engines_video_enhance_0_wait", "Video Enhance 0 wait utilisation %"
 )
 
+igpu_engines_compute_busy = Gauge(
+    "igpu_engines_compute_busy", "Compute busy utilisation %"
+)
+igpu_engines_compute_sema = Gauge(
+    "igpu_engines_compute_sema", "Compute sema utilisation %"
+)
+igpu_engines_compute_wait = Gauge(
+    "igpu_engines_compute_wait", "Compute wait utilisation %"
+)
+
 igpu_frequency_actual = Gauge("igpu_frequency_actual", "Frequency actual MHz")
 igpu_frequency_requested = Gauge("igpu_frequency_requested", "Frequency requested MHz")
 
@@ -274,6 +284,9 @@ def update(data):
     ven_busy = eng_val(data, ["VideoEnhance/0", "VideoEnhance"], "busy")
     ven_sema = eng_val(data, ["VideoEnhance/0", "VideoEnhance"], "sema")
     ven_wait = eng_val(data, ["VideoEnhance/0", "VideoEnhance"], "wait")
+    ccs_busy = eng_val(data, ["Compute"], "busy")
+    ccs_sema = eng_val(data, ["Compute"], "sema")
+    ccs_wait = eng_val(data, ["Compute"], "wait")
 
     igpu_engines_blitter_0_busy.set(blit_busy)
     igpu_engines_blitter_0_sema.set(blit_sema)
@@ -290,6 +303,10 @@ def update(data):
     igpu_engines_video_enhance_0_busy.set(ven_busy)
     igpu_engines_video_enhance_0_sema.set(ven_sema)
     igpu_engines_video_enhance_0_wait.set(ven_wait)
+
+    igpu_engines_compute_busy.set(ccs_busy)
+    igpu_engines_compute_sema.set(ccs_sema)
+    igpu_engines_compute_wait.set(ccs_wait)
 
     igpu_frequency_actual.set(data.get("frequency", {}).get("actual", 0))
     igpu_frequency_requested.set(data.get("frequency", {}).get("requested", 0))
@@ -324,6 +341,8 @@ def update(data):
             igpu_engines_blitter_0_busy.set(active)
         if "VideoEnhance" in targets and ven_busy <= 0:
             igpu_engines_video_enhance_0_busy.set(active)
+        if "Compute" in targets and ccs_busy <= 0:
+            igpu_engines_compute_busy.set(active)
 
     # Calculate maximum busy utilization across all engines
     busy_values = [
@@ -331,6 +350,7 @@ def update(data):
         r3d_busy,
         vid_busy,
         ven_busy,
+        ccs_busy,
     ]
     igpu_engines_busy_max.set(max(busy_values))
 
