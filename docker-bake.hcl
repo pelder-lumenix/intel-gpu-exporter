@@ -1,7 +1,7 @@
 // docker-bake.hcl
 target "docker-metadata-action" {}
 
-target "build" {
+target "default" {
   inherits = ["docker-metadata-action"]
   context = "./"
   dockerfile = "Dockerfile"
