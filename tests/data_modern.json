@@ -1,0 +1,373 @@
+{
+	"period": {
+		"duration": 14.128168,
+		"unit": "ms"
+	},
+	"frequency": {
+		"requested": 1627.953461,
+		"actual": 849.367023,
+		"unit": "MHz"
+	},
+	"interrupts": {
+		"count": 70.780585,
+		"unit": "irq/s"
+	},
+	"rc6": {
+		"value": 0.000000,
+		"unit": "%"
+	},
+	"power": {
+		"GPU": 7.525621,
+		"Package": 34.932362,
+		"unit": "W"
+	},
+	"engines": {
+		"Render/3D": {
+			"busy": 4.458809,
+			"sema": 0.000000,
+			"wait": 0.000000,
+			"unit": "%"
+		},
+		"Blitter": {
+			"busy": 0.000000,
+			"sema": 0.000000,
+			"wait": 0.000000,
+			"unit": "%"
+		},
+		"Video": {
+			"busy": 0.000000,
+			"sema": 0.000000,
+			"wait": 0.000000,
+			"unit": "%"
+		},
+		"VideoEnhance": {
+			"busy": 0.000000,
+			"sema": 0.000000,
+			"wait": 0.000000,
+			"unit": "%"
+		},
+		"Compute": {
+			"busy": 95.196936,
+			"sema": 0.000000,
+			"wait": 0.000000,
+			"unit": "%"
+		}
+	},
+	"clients": {
+		"4291707147": {
+			"name": "python",
+			"pid": "3260149",
+			"memory": {
+				"system": {
+					"total": "211890176",
+					"shared": "0",
+					"resident": "211890176",
+					"purgeable": "1138688",
+					"active": "210681856"
+				}
+			},
+			"engine-classes": {
+				"Render/3D": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Blitter": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Video": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"VideoEnhance": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Compute": {
+					"busy": "93.927695",
+					"unit": "%"
+				}
+			}
+		},
+		"4294967295": {
+			"name": "systemd",
+			"pid": "1",
+			"memory": {
+				"system": {
+					"total": "152645632",
+					"shared": "79843328",
+					"resident": "151859200",
+					"purgeable": "9932800",
+					"active": "0"
+				}
+			},
+			"engine-classes": {
+				"Render/3D": {
+					"busy": "4.343753",
+					"unit": "%"
+				},
+				"Blitter": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Video": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"VideoEnhance": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Compute": {
+					"busy": "0.000000",
+					"unit": "%"
+				}
+			}
+		},
+		"4294865089": {
+			"name": "cef_server",
+			"pid": "102207",
+			"memory": {
+				"system": {
+					"total": "25939968",
+					"shared": "8192",
+					"resident": "25939968",
+					"purgeable": "913408",
+					"active": "0"
+				}
+			},
+			"engine-classes": {
+				"Render/3D": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Blitter": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Video": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"VideoEnhance": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Compute": {
+					"busy": "0.000000",
+					"unit": "%"
+				}
+			}
+		},
+		"4294865137": {
+			"name": "cef_server",
+			"pid": "102159",
+			"memory": {
+				"system": {
+					"total": "8642560",
+					"shared": "0",
+					"resident": "8642560",
+					"purgeable": "978944",
+					"active": "0"
+				}
+			},
+			"engine-classes": {
+				"Render/3D": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Blitter": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Video": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"VideoEnhance": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Compute": {
+					"busy": "0.000000",
+					"unit": "%"
+				}
+			}
+		},
+		"4294866960": {
+			"name": "snapd-desktop-i",
+			"pid": "100336",
+			"memory": {
+				"system": {
+					"total": "4943872",
+					"shared": "0",
+					"resident": "4943872",
+					"purgeable": "0",
+					"active": "0"
+				}
+			},
+			"engine-classes": {
+				"Render/3D": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Blitter": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Video": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"VideoEnhance": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Compute": {
+					"busy": "0.000000",
+					"unit": "%"
+				}
+			}
+		},
+		"4294867240": {
+			"name": "xdg-desktop-por",
+			"pid": "100056",
+			"memory": {
+				"system": {
+					"total": "4943872",
+					"shared": "0",
+					"resident": "4943872",
+					"purgeable": "0",
+					"active": "0"
+				}
+			},
+			"engine-classes": {
+				"Render/3D": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Blitter": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Video": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"VideoEnhance": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Compute": {
+					"busy": "0.000000",
+					"unit": "%"
+				}
+			}
+		},
+		"4294867270": {
+			"name": "nautilus",
+			"pid": "100026",
+			"memory": {
+				"system": {
+					"total": "206348288",
+					"shared": "19005440",
+					"resident": "206348288",
+					"purgeable": "6942720",
+					"active": "0"
+				}
+			},
+			"engine-classes": {
+				"Render/3D": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Blitter": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Video": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"VideoEnhance": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Compute": {
+					"busy": "0.000000",
+					"unit": "%"
+				}
+			}
+		},
+		"4294867729": {
+			"name": "mutter-x11-fram",
+			"pid": "99567",
+			"memory": {
+				"system": {
+					"total": "4943872",
+					"shared": "0",
+					"resident": "4943872",
+					"purgeable": "0",
+					"active": "0"
+				}
+			},
+			"engine-classes": {
+				"Render/3D": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Blitter": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Video": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"VideoEnhance": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Compute": {
+					"busy": "0.000000",
+					"unit": "%"
+				}
+			}
+		},
+		"4294867752": {
+			"name": "gnome-shell",
+			"pid": "99544",
+			"memory": {
+				"system": {
+					"total": "259239936",
+					"shared": "60829696",
+					"resident": "259239936",
+					"purgeable": "2093056",
+					"active": "0"
+				}
+			},
+			"engine-classes": {
+				"Render/3D": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Blitter": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Video": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"VideoEnhance": {
+					"busy": "0.000000",
+					"unit": "%"
+				},
+				"Compute": {
+					"busy": "0.000000",
+					"unit": "%"
+				}
+			}
+		}
+	}
+}
